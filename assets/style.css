@@ -4,10 +4,17 @@
     box-sizing: border-box; 
 } 
 img{ 
-    max-width: 100%; 
+    width: 100%;
 } 
 
-.card_main{
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    height: 255px;
+}
+
+.main_box{
     position: relative;
 }
 
@@ -15,15 +22,18 @@ img{
     position: absolute;
     bottom: 10px;
     right: 10px;
-    color: white;
     text-align: right;
+    color: white;
 }
 
-.container{ 
-     
-    display: flex; 
-    text-align: center; 
-    justify-content: center; 
-    align-items: center; 
-    
+.aside_box{
+    display: flex;
+}
+
+.thumb img{ 
+    height: calc(100% / 5); 
+}
+
+.active{
+    border: solid 5px blue;
 }
